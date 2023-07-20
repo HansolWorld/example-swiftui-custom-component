@@ -14,6 +14,9 @@ struct ContentView: View {
                 NavigationLink(destination: TagView()) {
                     Text("TagView")
                 }
+                NavigationLink(destination: AnimationToggle()) {
+                    Text("AnimationToggle")
+                }
             }
         }
     }

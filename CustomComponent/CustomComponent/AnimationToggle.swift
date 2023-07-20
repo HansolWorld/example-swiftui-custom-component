@@ -1,5 +1,5 @@
 //
-//  CustomToggle.swift
+//  AnimationToggle.swift
 //  CustomComponent
 //
 //  Created by apple on 2023/07/20.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct CustomToggle: View {
+struct AnimationToggle: View {
     @State var size: Bool = false
     @State var toggle: Bool = false
     @Namespace var circle: Namespace.ID
@@ -15,7 +15,7 @@ struct CustomToggle: View {
     var body: some View {
         VStack {
             GeometryReader { proxy in
-                Color.blue'
+                Color.blue
                 Circle()
                     .fill(.white)
                     .frame(width: 100, height: 100)
@@ -51,6 +51,6 @@ struct CustomToggle: View {
 
 struct CustomToggle_Previews: PreviewProvider {
     static var previews: some View {
-        CustomToggle()
+        AnimationToggle()
     }
 }
