@@ -12,16 +12,20 @@ struct TagView: View {
     let fontSize: CGFloat = 17
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 10) {
-            ForEach(getRows(), id: \.self) { rows in
-                HStack {
-                    ForEach(rows, id: \.self) { keyword in
-                        tagView(tag: keyword)
+        ZStack {
+            Color(UIColor.systemGray6)
+                .ignoresSafeArea()
+            VStack(alignment: .leading, spacing: 10) {
+                ForEach(getRows(), id: \.self) { rows in
+                    HStack {
+                        ForEach(rows, id: \.self) { keyword in
+                            tagView(tag: keyword)
+                        }
                     }
                 }
             }
+            .frame(width: UIScreen.main.bounds.width - 80, alignment: .leading)
         }
-        .frame(width: UIScreen.main.bounds.width - 80, alignment: .leading)
     }
     
     @ViewBuilder
