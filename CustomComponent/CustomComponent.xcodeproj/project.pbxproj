@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF270FE62A694002009F52C7 /* CustomToggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF270FE52A694002009F52C7 /* CustomToggle.swift */; };
 		FFB0EEF72A66B6920034DE4F /* CustomComponentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0EEF62A66B6920034DE4F /* CustomComponentApp.swift */; };
 		FFB0EEF92A66B6920034DE4F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0EEF82A66B6920034DE4F /* ContentView.swift */; };
 		FFB0EEFB2A66B6930034DE4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB0EEFA2A66B6930034DE4F /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF270FE52A694002009F52C7 /* CustomToggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToggle.swift; sourceTree = "<group>"; };
 		FFB0EEF32A66B6920034DE4F /* CustomComponent.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomComponent.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB0EEF62A66B6920034DE4F /* CustomComponentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomComponentApp.swift; sourceTree = "<group>"; };
 		FFB0EEF82A66B6920034DE4F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF270FE72A694017009F52C7 /* Toggle */ = {
+			isa = PBXGroup;
+			children = (
+				FF270FE52A694002009F52C7 /* CustomToggle.swift */,
+			);
+			name = Toggle;
+			sourceTree = "<group>";
+		};
+		FF270FE82A694021009F52C7 /* Tag */ = {
+			isa = PBXGroup;
+			children = (
+				FFB0EF042A66B7160034DE4F /* TagView.swift */,
+			);
+			name = Tag;
+			sourceTree = "<group>";
+		};
 		FFB0EEEA2A66B6920034DE4F = {
 			isa = PBXGroup;
 			children = (
@@ -55,7 +73,8 @@
 			children = (
 				FFB0EEF62A66B6920034DE4F /* CustomComponentApp.swift */,
 				FFB0EEF82A66B6920034DE4F /* ContentView.swift */,
-				FFB0EF042A66B7160034DE4F /* TagView.swift */,
+				FF270FE82A694021009F52C7 /* Tag */,
+				FF270FE72A694017009F52C7 /* Toggle */,
 				FFB0EEFA2A66B6930034DE4F /* Assets.xcassets */,
 				FFB0EEFC2A66B6930034DE4F /* Preview Content */,
 			);
@@ -142,6 +161,7 @@
 			files = (
 				FFB0EEF92A66B6920034DE4F /* ContentView.swift in Sources */,
 				FFB0EEF72A66B6920034DE4F /* CustomComponentApp.swift in Sources */,
+				FF270FE62A694002009F52C7 /* CustomToggle.swift in Sources */,
 				FFB0EF052A66B7170034DE4F /* TagView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
